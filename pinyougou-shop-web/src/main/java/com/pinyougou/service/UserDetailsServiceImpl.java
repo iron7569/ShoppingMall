@@ -48,6 +48,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             return null;
         }
         //工作空间版本提交
+        //远程仓库修改
         List <GrantedAuthority> grantedAuthorities = new ArrayList <> ();
         grantedAuthorities.add ( new SimpleGrantedAuthority ( "ROLE_SELLER" ) );
 
