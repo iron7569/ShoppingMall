@@ -53,6 +53,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         UserDetails userDetails = new User ( username, seller.getPassword (), grantedAuthorities );
 
+        //工作空间版本
         return userDetails;
     }
 }
