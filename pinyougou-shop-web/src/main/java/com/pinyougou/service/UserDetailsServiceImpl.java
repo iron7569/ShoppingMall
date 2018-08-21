@@ -48,6 +48,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             return null;
         }
 
+        //桌面项目
+
         List <GrantedAuthority> grantedAuthorities = new ArrayList <> ();
         grantedAuthorities.add ( new SimpleGrantedAuthority ( "ROLE_SELLER" ) );
 
