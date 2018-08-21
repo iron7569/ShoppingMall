@@ -14,26 +14,26 @@ public interface SellerService {
 	 * 返回全部列表
 	 * @return
 	 */
-	public List<TbSeller> findAll();
+	List<TbSeller> findAll();
 	
 	
 	/**
 	 * 返回分页列表
 	 * @return
 	 */
-	public PageResult findPage(int pageNum, int pageSize);
+	PageResult findPage(int pageNum, int pageSize);
 	
 	
 	/**
 	 * 增加
 	*/
-	public void add(TbSeller seller);
+	void add(TbSeller seller);
 	
 	
 	/**
 	 * 修改
 	 */
-	public void update(TbSeller seller);
+	void update(TbSeller seller);
 	
 
 	/**
@@ -41,14 +41,14 @@ public interface SellerService {
 	 * @param id
 	 * @return
 	 */
-	public TbSeller findOne(String id);
+	TbSeller findOne(String id);
 	
 	
 	/**
 	 * 批量删除
 	 * @param ids
 	 */
-	public void delete(String[] ids);
+	void delete(String[] ids);
 
 	/**
 	 * 分页
@@ -56,6 +56,13 @@ public interface SellerService {
 	 * @param pageSize 每页记录数
 	 * @return
 	 */
-	public PageResult findPage(TbSeller seller, int pageNum, int pageSize);
+	PageResult findPage(TbSeller seller, int pageNum, int pageSize);
+
+	/**
+	 * 商家审核,修改状态
+	 * @param sellerId 商家id
+	 * @param status 新状态
+	 */
+	void updateStatus(String sellerId,String status);
 	
 }
