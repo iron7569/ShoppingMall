@@ -47,13 +47,13 @@ public class UserDetailsServiceImpl implements UserDetailsService {
             //throw new RuntimeException ( "审核暂未通过" );
             return null;
         }
-
+        //工作空间版本提交
         List <GrantedAuthority> grantedAuthorities = new ArrayList <> ();
         grantedAuthorities.add ( new SimpleGrantedAuthority ( "ROLE_SELLER" ) );
 
         UserDetails userDetails = new User ( username, seller.getPassword (), grantedAuthorities );
 
-        //工作空间版本
+        //工作空间版本提交
         return userDetails;
     }
 }
