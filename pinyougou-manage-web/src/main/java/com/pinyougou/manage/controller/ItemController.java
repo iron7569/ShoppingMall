@@ -101,7 +101,7 @@ public class ItemController {
 	
 		/**
 	 * 查询+分页
-	 * @param brand
+	 * @param item
 	 * @param page
 	 * @param rows
 	 * @return
