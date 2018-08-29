@@ -13,6 +13,7 @@ import com.pinyougou.pojo.TbItemCatExample;
 import com.pinyougou.pojo.TbItemCatExample.Criteria;
 
 import entity.PageResult;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * 服务实现层
@@ -20,6 +21,7 @@ import entity.PageResult;
  * @author Administrator
  */
 @Service
+@Transactional
 public class ItemCatServiceImpl implements ItemCatService {
 
     @Autowired

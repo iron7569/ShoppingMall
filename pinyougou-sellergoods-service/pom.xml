@@ -14,8 +14,6 @@
     <packaging>war</packaging>
 
     <name>pinyougou-sellergoods-service Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
 
     <dependencies>
 
@@ -100,6 +98,7 @@
     </dependencies>
 
     <build>
+        <finalName>pinyougou-sellergoods-service</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>

@@ -62,4 +62,11 @@ public interface TypeTemplateService {
 	
 
 	List<Map> getTemplateList();
+
+	/**
+	 * 查找规格选项列表
+	 * @param id 类型模板id
+	 * @return 规格选项列表
+	 */
+	List<Map> getSpecList(Long id);
 }
